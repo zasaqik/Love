@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To the best girl in the world</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebef;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: max-height 1.5s ease-in-out;
+            max-height: 400px;
+            overflow: hidden;
+        }
+        .container.expanded {
+            max-height: 3000px;
+        }
+        h1 {
+            color: #e63946;
+        }
+        .love-letter {
+            font-size: 18px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s, transform 1.5s;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-title {
+            color: #e63946;
+            margin-bottom: 5px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        button {
+            background: #e63946;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #d62839;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #e63946;
+            transform: rotate(45deg);
+            animation: heartFloat 4s ease-in-out;
+            opacity: 0;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #e63946;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            left: -10px;
+        }
+        .heart::after {
+            top: -10px;
+        }
+        @keyframes heartFloat {
+            0% {
+                transform: rotate(45deg) translateY(0) scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(45deg) translateY(-100vh) scale(1);
+                opacity: 0;
+            }
+        }
+        .flower {
+            position: absolute;
+            font-size: 30px;
+            animation: flowerFloat 10s linear infinite;
+        }
+        @keyframes flowerFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>To my soulmate</h1>
+        <p>I love you so much.</p>
+        <button onclick="revealLetter()">Show Love Letter</button>
+        <p class="love-letter" id="loveLetter">To my dearest Hala, From the moment you entered my life, my whole world shifted. I felt brighter, and every day felt like a blessing, as if my dreams had finally come true. I never wanted to wake up and leave that dream behind. You have become the brightest part of my world, where even the darkest times had no chance against the light and hope you bring to my life. With you, I never felt silenced when talking to someone, and I found myself wanting to share every secret, everything I had kept hidden about myself. Watching you listen warmed my heart in ways I never imagined.
+
+Your kindness, your love, your personality—these are the things that have influenced these deep emotions I never could have understood if it weren't for you. You've changed everything for me, not just in how I see love, but in how I feel it. Before you, my heart was just a pumping organ, merely existing. But now, it feels alive in a way I cannot fully comprehend.
+
+The love you give me isn't just ordinary love. It's a powerful force, Hala—a fiery energy that burns with such passion, a flame that burns deep within me. You've made me feel things I never thought I would experience. Everything you do acts as a catalyst for my heart and mind, constantly thinking about you. You are everything, Hala. You are the reason my heart races, the reason my thoughts drift into dreams, the reason love feels real and not just a distant fantasy.
+
+You've changed me forever, and I wouldn't have it any other way. Loving you has made me better. It's made me want to be the best version of myself—not just for you, but because you make me believe I can be. You've given me feelings so deep and intense that sometimes I don't even know how to handle them. But one thing I do know is that I never want to lose this feeling. I never want to lose you.
+
+You have this incredible way of making me laugh, even when I least expect it, even when I'm in the worst mood. It's as if you carry a light inside you, a warmth that turns even the dullest moments into something extraordinary. I love that about you. I love that when I think of you, I don't just think of love and beauty—I think of laughter. I think of happiness. I think of moments I want to relive over and over again. You've given me that, Hala, and I never want to go a day without it.
+
+There are days when I close my eyes and dream about the future. One day, I will wake up with your beautiful eyes watching over me. I'll wake up beside you, your gaze meeting mine. Your eyes tell stories without words, filled with warmth, depth, and a love that makes my heart race. They're the kind of eyes that make me forget everything else, that make me want to stay lost in them forever. They will be the perfect start to every day, the confirmation that I have everything I could ever need right there beside me.
+
+One day, that moment won't just be a dream. One day, I'll open my eyes, and you'll be there, as breathtaking as ever, your sleepy smile making my heart ache with love. And when that day comes, I know I'll never want to close my eyes again. It will all become a piece of this love that grows stronger every day.
+
+You've made me realize that love isn't just a feeling; it's a force that consumes me, fills every corner of my being. It's in the way I think about you, in the way my heart races when I see your name on my screen, in the way I can't imagine a future without you in it. You've become so much more than just someone I care about. There is no limit to how much I love you, Hala. It's deeper than anything I've ever felt before, and every day that passes, it only grows.
+
+I can't imagine my life without you by my side, because you've become the most essential part of it. I love you more than I ever thought possible, more than I ever thought I could.</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <p class="gallery-title">Beautiful</p>
+                <img src="images/photo1.jpg" alt="Beautiful">
+            </div>
+            <div class="gallery-item">
+                <p class="gallery-title">Alluring</p>
+                <img src="images/photo2.jpg" alt="Alluring">
+            </div>
+            <div class="gallery-item">
+                <p class="gallery-title">Ethereal</p>
+                <img src="images/photo3.jpg" alt="Ethereal">
+            </div>
+            <div class="gallery-item">
+                <p class="gallery-title">Elegance</p>
+                <img src="images/photo4.jpg" alt="Elegance">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function revealLetter() {
+            document.getElementById("loveLetter").classList.add("show");
+            document.getElementById("container").classList.add("expanded");
+            createHearts();
+        }
+
+        function createHearts() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.classList.add('heart');
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    document.body.appendChild(heart);
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 4000);
+                }, i * 200);
+            }
+        }
+
+        function createFlowers() {
+            const flowers = ['🌸', '🌺', '🌹', '🌷', '🌼'];
+            for (let i = 0; i < 10; i++) {
+                const flower = document.createElement('div');
+                flower.classList.add('flower');
+                flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+                flower.style.left = Math.random() * window.innerWidth + 'px';
+                flower.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                document.body.appendChild(flower);
+            }
+        }
+
+        createFlowers();
+    </script>
+</body>
+</html>
